@@ -366,18 +366,23 @@ let resutado = 0;
 	
    }
    
-   if(operacion === '/')
-   {
-	 let division = 0;
-	 division = numero1 / numero2;
-	 resutado = 'el resultado de la division es: ' + division
-	 return(resutado);
-	 
-   }
-   
-}
-
-console.log(calculoMatematico(oper, num1, num2));
+   if(calculo === '/')
+    {
+    let division = 0;
+    division = numero1 / numero2;
+    resutado = 'el resultado de la division es: ' + division
+    return(resutado);
+    
+    }
+    else
+    {
+      
+      let resultado = 'La operación matemática que intenta realizar es inexistente';	
+      return(resultado);	
+ }
+ }
+ 
+ console.log(calculoMatematico(oper, num1, num2));
 
 //===============================================================================
 
